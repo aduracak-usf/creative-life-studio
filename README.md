@@ -12,7 +12,7 @@ To publish the site, enable GitHub Pages for the `main` branch and repository ro
 
 ## Botpress ADK agent
 
-The agent source, evaluations, and setup instructions are in [`creativity-agent/`](./creativity-agent/). Follow its README to install dependencies, check, develop, and deploy the agent. The deployed Botpress Webchat is embedded in the website; publishing the static site does not deploy the agent itself.
+The agent source, evaluations, and setup instructions are in [`creativity-agent/`](./creativity-agent/). Follow its README to install dependencies, check, develop, and deploy the agent. The deployed Botpress Webchat mounts inline in `mybot.html`; publishing the static site does not deploy the agent itself.
 
 ## Project documents
 
