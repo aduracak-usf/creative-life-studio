@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 860" role="img" aria-labelledby="title description">
+  <title id="title">How The Creative Companion works</title>
+  <desc id="description">A visitor sends a message through the Creative Life Studio website's Botpress Webchat to a Botpress Cloud agent. The agent uses conversation instructions, retrieves relevant material from five creative knowledge files, and can return a structured project plan. Website data is stored separately in the visitor's browser and is not connected to chat.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#6c7966"/>
+    </marker>
+    <marker id="arrow-back" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#a46b78"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #403b39; }
+      .title { font-family: Georgia, "Times New Roman", serif; font-size: 34px; font-weight: 700; }
+      .subtitle { font-size: 16px; fill: #6a625d; }
+      .label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; fill: #80616a; }
+      .box-title { font-family: Georgia, "Times New Roman", serif; font-size: 22px; font-weight: 700; }
+      .body { font-size: 15px; }
+      .small { font-size: 13px; fill: #625a55; }
+      .tiny { font-size: 12px; fill: #625a55; }
+      .card { stroke-width: 1.5; }
+      .line { fill: none; stroke: #6c7966; stroke-width: 2.5; marker-end: url(#arrow); }
+      .response { fill: none; stroke: #a46b78; stroke-width: 2.5; stroke-dasharray: 8 6; marker-end: url(#arrow-back); }
+    </style>
+  </defs>
+
+  <rect width="1280" height="860" rx="24" fill="#f8f3eb"/>
+  <text x="54" y="66" class="label">THE CREATIVE LIFE STUDIO</text>
+  <text x="54" y="111" class="title">From a creative question to a doable next step</text>
+  <text x="54" y="143" class="subtitle">A Botpress-powered assistant embedded in a separate, browser-based creative workspace</text>
+
+  <text x="54" y="192" class="label">THE CHAT REQUEST</text>
+  <rect x="54" y="210" width="190" height="150" rx="18" fill="#fffdf9" stroke="#d8cdc0" class="card"/>
+  <circle cx="92" cy="252" r="20" fill="#e8b9bf"/>
+  <path d="M82 251h20M92 241v20" stroke="#fffdf9" stroke-width="3" stroke-linecap="round"/>
+  <text x="80" y="294" class="box-title">Visitor</text>
+  <text x="80" y="321" class="small">Shares an idea, time,</text>
+  <text x="80" y="341" class="small">energy, or materials</text>
+
+  <rect x="286" y="210" width="250" height="150" rx="18" fill="#fffdf9" stroke="#c6d0bf" class="card"/>
+  <text x="310" y="244" class="label">WEBSITE · mybot.html</text>
+  <text x="310" y="278" class="box-title">AI Assistant</text>
+  <text x="310" y="307" class="small">Botpress Webchat is loaded</text>
+  <text x="310" y="327" class="small">inside the #webchat area</text>
+
+  <rect x="588" y="210" width="330" height="150" rx="18" fill="#e7ece2" stroke="#9eae96" class="card"/>
+  <text x="614" y="244" class="label">BOTPRESS CLOUD · ADK AGENT</text>
+  <text x="614" y="278" class="box-title">The Creative Companion</text>
+  <text x="614" y="307" class="small">Conversation instructions + configured model</text>
+  <text x="614" y="329" class="small">Warm, practical, time- and energy-aware</text>
+
+  <rect x="970" y="210" width="256" height="150" rx="18" fill="#f3e5e5" stroke="#d6afb3" class="card"/>
+  <text x="994" y="244" class="label">BACK TO THE CHAT</text>
+  <text x="994" y="278" class="box-title">Useful response</text>
+  <text x="994" y="307" class="small">Advice, steps, materials,</text>
+  <text x="994" y="327" class="small">or a structured project plan</text>
+
+  <path d="M244 284h36" class="line"/>
+  <path d="M536 284h44" class="line"/>
+  <path d="M918 284h44" class="line"/>
+  <path d="M1098 370 C1098 410 414 410 414 370" class="response"/>
+  <text x="647" y="402" class="tiny">Response returns through Webchat</text>
+
+  <rect x="588" y="438" width="304" height="147" rx="18" fill="#fffdf9" stroke="#c6d0bf" class="card"/>
+  <text x="612" y="472" class="label">GROUNDED REFERENCE</text>
+  <text x="612" y="505" class="box-title">Creative knowledge</text>
+  <text x="612" y="532" class="small">5 Markdown guides: painting, sewing,</text>
+  <text x="612" y="552" class="small">fabrics, beginner projects, time &amp; energy</text>
+  <text x="612" y="573" class="tiny">Loaded from creativity-agent/src/knowledge/</text>
+  <path d="M740 435v-65" class="line"/>
+  <text x="756" y="423" class="tiny">relevant context</text>
+
+  <rect x="922" y="438" width="304" height="147" rx="18" fill="#fffdf9" stroke="#d6afb3" class="card"/>
+  <text x="946" y="472" class="label">OPTIONAL PLANNING TOOL</text>
+  <text x="946" y="505" class="box-title">createProjectPlan</text>
+  <text x="946" y="532" class="small">Returns a validated plan: level, time,</text>
+  <text x="946" y="552" class="small">energy, materials, steps, next action</text>
+  <text x="946" y="573" class="tiny">It does not save to the website</text>
+  <path d="M918 329 C945 355 1075 387 1075 432" class="line"/>
+
+  <rect x="54" y="630" width="1172" height="174" rx="20" fill="#fffdf9" stroke="#d8cdc0" stroke-width="1.5"/>
+  <text x="82" y="670" class="label">THE WEBSITE WORKSPACE · SEPARATE FROM CHAT</text>
+  <text x="82" y="710" class="box-title">Explore · My Ideas · Projects · Boards · Planner · Sessions · Progress</text>
+  <text x="82" y="742" class="body">Studio records are saved in this browser's localStorage—not in Botpress and not synced across devices.</text>
+  <rect x="82" y="766" width="286" height="26" rx="13" fill="#f3e5e5"/>
+  <text x="98" y="784" class="tiny">No website save or calendar integration from chat</text>
+  <path d="M412 360v248" fill="none" stroke="#a46b78" stroke-width="2" stroke-dasharray="6 7"/>
+  <path d="M401 608h22" stroke="#a46b78" stroke-width="2"/>
+  <text x="437" y="601" class="tiny">Webchat is embedded on the site;</text>
+  <text x="437" y="618" class="tiny">the website's saved data stays separate.</text>
+
+  <text x="54" y="837" class="tiny">Built with Botpress ADK (TypeScript) · Webchat embedded in mybot.html · Static front end</text>
+</svg>
