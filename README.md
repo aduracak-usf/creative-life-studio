@@ -1,46 +1,21 @@
-# creativity-agent
+# The Creative Life Studio
 
-A Botpress Agent built with the ADK, pre-configured with chat and webchat integrations.
+A creative planning website with idea discovery, project planning, an inspiration board, and an embedded Botpress assistant.
 
-## Getting Started
+## Website
 
-1. Install dependencies:
+The site is a static HTML page. `index.html` redirects to [`mybot.html`](./mybot.html), the main studio page. Website projects, ideas, and plans are saved in the current browser and are separate from Botpress conversations.
 
-   ```bash
-   npm install
-   ```
+To publish the site, enable GitHub Pages for the `main` branch and repository root in **Settings → Pages**. The project site URL is:
 
-2. Start development server:
+`https://aduracak-usf.github.io/creative-life-studio/`
 
-   ```bash
-   adk dev
-   ```
+## Botpress ADK agent
 
-3. Chat with your agent locally:
+The agent source, evaluations, and setup instructions are in [`creativity-agent/`](./creativity-agent/). Follow its README to install dependencies, check, develop, and deploy the agent. The deployed Botpress Webchat is embedded in the website; publishing the static site does not deploy the agent itself.
 
-   ```bash
-   adk chat
-   ```
+## Project documents
 
-4. Deploy your agent:
-   ```bash
-   adk deploy
-   ```
-
-## Project Structure
-
-- `src/actions/` - Define callable functions
-- `src/workflows/` - Define long-running processes
-- `src/conversations/` - Define conversation handlers
-- `src/tables/` - Define data storage schemas
-- `src/triggers/` - Define event subscriptions
-- `src/knowledge/` - Add knowledge base files
-
-## Integrations
-
-This agent comes with **chat** and **webchat** integrations enabled, so you can start talking to it right away with `adk chat`.
-
-## Learn More
-
-- [ADK Documentation](https://botpress.com/docs/adk)
-- [Botpress Platform](https://botpress.com)
+- [Project blueprint](./PROJECT_BLUEPRINT.md)
+- [Demo guide](./DEMO_GUIDE.md)
+- [Agent architecture](./bot-architecture.svg)

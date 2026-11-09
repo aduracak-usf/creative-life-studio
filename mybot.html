@@ -578,7 +578,7 @@
 
     .bot-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--sage); }
 
-    #webchat {
+    #bp-embedded-webchat {
       width: 100%;
       height: min(70vh, 620px);
       min-height: 420px;
@@ -586,7 +586,7 @@
       border-radius: 0 0 19px 19px;
     }
 
-    #webchat iframe { width: 100% !important; height: 100% !important; border: 0; }
+    #bp-embedded-webchat iframe { width: 100% !important; height: 100% !important; border: 0; }
     .embed-instructions { margin: 18px 0 0; color: #6a625d; font-size: .82rem; }
 
     .about-section { background: var(--cream); }
@@ -1241,11 +1241,7 @@
         <div>
           <div class="bot-window" aria-label="Botpress AI assistant integration area">
             <div class="bot-window-header"><span class="bot-dot" aria-hidden="true"></span><span>The Creative Companion</span></div>
-            <div id="webchat">
-              <p>Need a little creative inspiration? Open a chat with The Creative Companion.</p>
-              <button class="button button-primary button-small" id="open-webchat" type="button">Chat with The Creative Companion</button>
-              <p class="status-message" id="webchat-message" role="status" aria-live="polite"></p>
-            </div>
+            <div id="bp-embedded-webchat" aria-label="Chat with The Creative Companion"></div>
           </div>
           <p class="embed-instructions"><strong>The Creative Companion:</strong> Chat responses come from the deployed Botpress agent. Ideas and projects you save on this site remain separate in this browser.</p>
         </div>
@@ -2568,15 +2564,5 @@
 
   <script src="https://cdn.botpress.cloud/webchat/v3.7/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2026/11/07/21/20261107215256-8FE9QT8I.js" defer></script>
-  <script>
-    document.querySelector("#open-webchat").addEventListener("click", () => {
-      if (typeof window.botpress?.open === "function") {
-        window.botpress.open();
-        document.querySelector("#webchat-message").textContent = "";
-      } else {
-        document.querySelector("#webchat-message").textContent = "The chat is still loading. Please try again in a moment.";
-      }
-    });
-  </script>
 </body>
 </html>
